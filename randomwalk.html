@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html language = "en" dir = "ltr">
+<head>
+<meta charset= "uft-8">
+<title></title> 
+<head>
+<body>
+<script>
+var recurse = 1;
+var min = -3; 
+var maxx = 3; 
+function function randomInRange(min, maxx) {
+ min = Math.ceil(min); // rounds a number UP to the next largest whole number or integer
+  maxx = Math.floor(maxx); // rounds a number DOWN to the previous largest whole number or integer
+  return Math.floor(Math.random() * (maxx - min) + min);
+    // random number within range of vars min and maxx
+   // We’ll call this from within our recursive function!
+      }
+
+      function randomwalk() {
+      	if (recursive > 20) return 
+      		randval = randval + randomInRange(min, maxx);
+      	console.log(randval);
+      	recurse = recurse + 1 ; 
+      	randomwalk();
+      }
+
+      randomwalk();
+
+      </script>
+     </body>
+     </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html language = "en" dir = "ltr">
+<head>
+<meta charset= "uft-8">
+<title></title> 
+<head>
+<body>
+<script>
+	function factorial(n) {
+
+if (n < 0 ) return ;
+if (n === 0 ) return 1;
+return n * factorial(n - 1);
+
+}
+
+var userstring = prompt("Number please");
+	var usernum = parseInt(userstring);
+
+console.log(usernum + "! is " + factorial(usernum));
+
+</script>
+</body>
+</html>

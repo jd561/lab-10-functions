@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html language = "en" dir = "ltr">
+<head>
+<meta charset= "uft-8">
+<title></title> 
+<head>
+<body>
+<script>
+	var recurse = 1;
+
+	function myrecursion() {
+		if (recurse > 20) return;
+		console.log("Look I'm recursing for " + recurse + " times!");
+        recurse = recurse + 1;
+        myrecursion();
+        }
+
+        myrecursion();
+
+         </script>
+         </body>
+         </html>

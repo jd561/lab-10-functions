@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html language = "en" dir = "ltr">
+<head>
+<meta charset= "uft-8">
+<title></title> 
+<head>
+<body>
+<script>
+	function factorial(n) {
+
+		var total = 1; 
+		for (i = 0; i < n; i = i + 1) {
+			total = total * (n-i);
+
+
+		}
+		return total;
+
+	}
+
+	var userstring = prompt("Number please");
+	var usernum = parseInt(userstring);
+
+console.log(usernum + "! is " + factorial(usernum));
+
+</script>
+</body>
+</html>
