@@ -10,11 +10,10 @@ var recurse = 1;
 var min = -3; 
 var maxx = 3; 
 function function randomInRange(min, maxx) {
- min = Math.ceil(min); // rounds a number UP to the next largest whole number or integer
-  maxx = Math.floor(maxx); // rounds a number DOWN to the previous largest whole number or integer
+ min = Math.ceil(min); 
+  maxx = Math.floor(maxx);
   return Math.floor(Math.random() * (maxx - min) + min);
-    // random number within range of vars min and maxx
-   // We’ll call this from within our recursive function!
+    
       }
 
       function randomwalk() {
